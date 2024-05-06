@@ -17,7 +17,7 @@ const CreateOrder= ()=>{
     const[dataJson,setDataJson]=useState([]);
     useEffect(()=>{
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + document.cookie.substring(6);
-        axios.get('http://localhost:8080/allitems').then(response=>{
+        axios.get('/allitems').then(response=>{
            setDataJson(response.data);
         }).catch(error=>{
             console.log("Error "+error);
@@ -45,7 +45,7 @@ const CreateOrder= ()=>{
     const submitHandler=(e)=>{
         e.preventDefault();
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + document.cookie.substring(6);   
-        axios.post("http://localhost:8080/createorder", array).then(  
+        axios.post("/createorder", array).then(  
             (response) => {
               confirmAlert({//title: response.data.message,
                 message: response.data,

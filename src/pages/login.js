@@ -14,7 +14,7 @@ function Login() {
   const postdata = (data) => {
     //console.log(data);
 
-    axios.post("https://health-app.azurewebsites.net/loginn", data).then(  
+    axios.post("/loginn", data).then(  
 
       (response) => {
         //success
