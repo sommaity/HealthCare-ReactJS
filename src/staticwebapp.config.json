@@ -1,0 +1,6 @@
+{
+    "navigationFallback": {
+        "rewrite": "/App.js",
+        "exclude": ["/images/*.{png,jpg,gif}","/css/*"]
+    }
+}
