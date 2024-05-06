@@ -7,7 +7,7 @@ import { confirmAlert } from 'react-confirm-alert';
 
 function Registration() {   
   const postdata = (data) => {
-    axios.post("/register", data).then(  
+    axios.post("https://health-app.azurewebsites.net/register", data).then(  
       (response) => {
         //success
         console.log(response);

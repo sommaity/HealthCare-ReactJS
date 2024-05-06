@@ -45,7 +45,7 @@ const CreateOrder= ()=>{
     const submitHandler=(e)=>{
         e.preventDefault();
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + document.cookie.substring(6);   
-        axios.post("/createorder", array).then(  
+        axios.post("https://health-app.azurewebsites.net/createorder", array).then(  
             (response) => {
               confirmAlert({//title: response.data.message,
                 message: response.data,
