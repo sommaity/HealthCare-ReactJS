@@ -2,12 +2,12 @@ import Navbar from "../Navbar";
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import React from "react";
-//import Cookies from 'universal-cookie';
+import Cookies from 'universal-cookie';
 import {useEffect } from 'react';
 
 
 const Logout=()=>{
-  //const cookies=new Cookies();
+  const cookies=new Cookies();
   useEffect(()=>{
     confirmAlert({
       title: 'Confirm to Logout',
@@ -16,7 +16,7 @@ const Logout=()=>{
         {
           label: 'Yes',
           onClick: () => {
-            //cookies.remove('token');
+            cookies.remove('token');
             localStorage.removeItem('token');
             window.location.href='/login';
             console.log("Yes")
