@@ -7,8 +7,8 @@ import {useEffect } from 'react';
 
 
 const Logout=()=>{
-  const cookies=new Cookies();
   useEffect(()=>{
+    const cookies=new Cookies();
     confirmAlert({
       title: 'Confirm to Logout',
       message: 'Are you sure to Logout.',
