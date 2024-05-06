@@ -17,7 +17,7 @@ const CreateOrder= ()=>{
     const[dataJson,setDataJson]=useState([]);
     useEffect(()=>{
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + document.cookie.substring(6);
-        axios.get('/allitems').then(response=>{
+        axios.get('https://health-app.azurewebsites.net/allitems').then(response=>{
            setDataJson(response.data);
         }).catch(error=>{
             console.log("Error "+error);
