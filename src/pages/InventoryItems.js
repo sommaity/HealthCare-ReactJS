@@ -29,7 +29,8 @@ function InventoryItems(){
             })
         })
     },[])
-    if(dataJson!==undefined){
+    console.log(dataJson.length);
+    if(dataJson.length!==0){
     return(
         <div className='table_quantity'>
             <header><Navbar/></header>

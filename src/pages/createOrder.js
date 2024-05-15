@@ -75,7 +75,7 @@ const CreateOrder= ()=>{
         setSubmit(true);
     }
 
-    if(dataJson!==undefined){
+    if(dataJson.length!==0){
         return (
             <div className='table_quantity'>
                 <header><Navbar/></header>
