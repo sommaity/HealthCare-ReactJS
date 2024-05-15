@@ -3,6 +3,7 @@ import axios from "axios";
 import './login.css';
 import { useState,useEffect } from 'react';
 import Navbar from "../Navbar";
+import url from "../Service/service";
 import { confirmAlert } from 'react-confirm-alert';
 //import 'react-confirm-alert/src/react-confirm-alert.css';
 import Cookies from 'universal-cookie';
@@ -10,11 +11,8 @@ import Cookies from 'universal-cookie';
 function Login() {
   //const [token, SetToken] = useState('');
   const cookies=new Cookies();
-
   const postdata = (data) => {
-    //console.log(data);
-
-    axios.post("https://health-app.azurewebsites.net/loginn", data).then(  
+    axios.post(url+"/loginn", data).then(  
 
       (response) => {
         //success

@@ -2,6 +2,7 @@ import './InventoryItems.css';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import Navbar from "../Navbar";
+import url from "../Service/service";
 import { confirmAlert } from 'react-confirm-alert';
 
 const array=[];
@@ -17,7 +18,7 @@ const CreateOrder= ()=>{
     const[dataJson,setDataJson]=useState([]);
     useEffect(()=>{
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + document.cookie.substring(6);
-        axios.get('https://health-app.azurewebsites.net/allitems').then(response=>{
+        axios.get(url+'/allitems').then(response=>{
            setDataJson(response.data);
         }).catch(error=>{
             console.log("Error "+error);
@@ -45,7 +46,7 @@ const CreateOrder= ()=>{
     const submitHandler=(e)=>{
         e.preventDefault();
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + document.cookie.substring(6);   
-        axios.post("https://health-app.azurewebsites.net/createorder", array).then(  
+        axios.post(url+"/createorder", array).then(  
             (response) => {
               confirmAlert({//title: response.data.message,
                 message: response.data,

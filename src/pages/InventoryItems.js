@@ -2,6 +2,7 @@ import './InventoryItems.css';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import Navbar from "../Navbar";
+import url from "../Service/service";
 import { confirmAlert } from 'react-confirm-alert';
 
 function InventoryItems(){
@@ -9,7 +10,7 @@ function InventoryItems(){
     useEffect(()=>{
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + document.cookie.substring(6);
         //console.log("cookies "+document.cookie.substring(6));
-        axios.get('https://health-app.azurewebsites.net/allitems').then(response=>{
+        axios.get(url+'/allitems').then(response=>{
             console.log(response.data);
             console.log("status "+response.status);
             setDataJson(response.data);

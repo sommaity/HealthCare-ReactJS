@@ -3,11 +3,12 @@ import './registration.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Navbar from "../Navbar";
+import url from "../Service/service";
 import { confirmAlert } from 'react-confirm-alert';
 
 function Registration() {   
   const postdata = (data) => {
-    axios.post("https://health-app.azurewebsites.net/register", data).then(  
+    axios.post(url+"/register", data).then(  
       (response) => {
         //success
         console.log(response);

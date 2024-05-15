@@ -1,6 +1,7 @@
 import './InventoryItems.css';
 //import { useState,useEffect } from 'react';
 import Navbar from "../Navbar";
+import url from "../Service/service";
 import axios from 'axios';
 import { useEffect } from 'react';
 import { confirmAlert } from 'react-confirm-alert';
@@ -11,7 +12,7 @@ function OrderStatus (){
   },[])
     const postdata = () => {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + document.cookie.substring(6); 
-        axios.post("https://health-app.azurewebsites.net/order").then(response => {
+        axios.post(url+"/order").then(response => {
             console.log(response);
             console.log(response.data);
             document.getElementById("demo2").innerHTML="Your Order Status";
