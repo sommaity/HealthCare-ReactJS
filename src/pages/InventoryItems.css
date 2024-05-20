@@ -1,0 +1,191 @@
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table_quantity {
+  
+  position:center;
+
+  text-align: center;
+
+  /*margin-left: auto;
+
+  margin-right: auto;
+
+  /* top: 15%;
+
+  left: 35%; */
+
+  width:fit-content;
+
+  height:auto;
+
+  margin: auto; 
+
+  border: 1px solid #ccc;
+
+  background-color: white;
+
+} 
+
+.orderbtn{
+    
+  
+  background-color: #83a096;
+
+  color: white;
+
+  padding: 8px 20px;
+
+  margin: 8px 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 20%;
+
+  opacity: 0.5;
+
+}
+
+
+
+.orderbtn:hover {
+
+  opacity: 1;
+
+}
+
+.Apps {
+  
+  position:center;
+
+  /* top: 15%;
+
+  left: 35%; */
+
+  width:fit-content;
+
+  height:auto;
+
+  margin: auto; 
+
+  border: 1px solid #ccc;
+
+  background-color: white;
+
+} 
+
+
+.Rregisterbtn {
+  
+  background-color: #83a096;
+
+  color: white;
+
+  padding: 8px 20px;
+
+  margin: 8px 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 20%;
+
+  opacity: 0.5;
+
+}
+
+
+
+.Rregisterbtn:hover {
+
+  opacity: 1;
+
+}
+
+.Rcontainer{
+  
+  text-align: center;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding: 16px;
+
+  background-color: rgba(115, 205, 253, 0.525);
+
+}
+
+
+.card {
+
+  /* Add shadows to create the "card" effect */
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  transition: 0.3s;
+
+  width: fit-content;
+
+  background-color: rgb(203, 201, 193);
+
+  padding: 2px;
+
+  margin: auto;
+
+  border: 2px solid #323231;
+
+  padding: 50px;
+
+  height: auto;
+
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container{
+  
+  text-align: center;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding: 16px;
+
+  background-color: rgba(115, 205, 253, 0.525);
+
+}
+tr:nth-child(even) {
+  background-color: #d6eeee;
+
+}
+th {
+  background-color: #83a096;
+  color: white;
+}

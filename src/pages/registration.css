@@ -1,0 +1,196 @@
+.Rheader{
+
+    color:rgb(7, 37, 63);
+  
+   text-align: center;
+  
+  }
+  
+  .Rcontainer{
+  
+    text-align: center;
+  
+    margin-left: auto;
+  
+    margin-right: auto;
+
+    padding: 16px;
+  
+    background-color: rgba(115, 205, 253, 0.525);
+  
+  }
+
+
+  .card {
+
+    /* Add shadows to create the "card" effect */
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+
+    width: fit-content;
+
+    background-color: rgb(203, 201, 193);
+
+    padding: 2px;
+
+    margin: auto;
+
+    border: 2px solid #323231;
+
+    padding: 50px;
+
+    height: auto;
+
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  
+  
+  body {
+  
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(193, 232, 239); 
+
+    background-image: url('../photo/bg.png');
+    background-attachment: fixed;
+  
+  }
+  
+  
+  
+  * {
+  
+    box-sizing: border-box;
+  
+  }
+  /* .Rcontainer {
+
+    padding: 35px;
+  
+    background-color: rgb(152, 216, 248);
+  
+  } */
+  
+  
+  
+  
+  
+  input[type=text], input[type=password],input[type=email] {
+  
+    width: 30%;
+  
+    padding: 8px;
+  
+    margin: 2px 0 2px 0;
+  
+    display: inline-block;
+  
+    border: 15px;
+  
+    background: #f1f5f6;
+  
+  }
+  
+  
+  
+  /*input[type=text]:focus, input[type=password]:focus {
+  
+    background-color: rgba(245, 245, 245, 0.703);
+  
+    outline: none;
+  
+  }*/
+  hr {
+
+    border: 1px solid #283922;
+  
+    margin-bottom: 25px;
+  
+  }
+  
+  
+  
+  
+  
+  .Rregisterbtn {
+  
+    background-color: #d3da9182;
+  
+    color: white;
+  
+    padding: 8px 20px;
+  
+    margin: 8px 0;
+  
+    border: none;
+  
+    cursor: pointer;
+  
+    width: 20%;
+  
+    opacity: 0.5;
+  
+  }
+  
+  
+  
+  .Rregisterbtn:hover {
+  
+    opacity: 1;
+  
+  }
+  
+  
+  
+  
+  
+  a {
+  
+    color: dodgerblue;
+  
+  }
+  
+  
+  
+  .Rsignin {
+  
+    background-color: #f1f1f1;
+  
+    text-align: center;
+  
+  }
+  
+  .RApp {
+  
+    position:center;
+  
+    /* top: 15%;
+  
+    left: 35%; */
+  
+    width:fit-content;
+  
+    height:auto;
+  
+    margin: auto; 
+  
+    border: 1px solid #ccc;
+  
+    background-color: white;
+  
+  }
+
+   .Rfield{
+    margin-left: 37px;
+
+  } 
+
+  .Rrfield{
+    margin-left: 5px;
+
+  } 
+
