@@ -11,7 +11,7 @@ function Home (){
             </div>
             <div className='home'>
                 <br></br>
-                <p7>Healthcare Inventory Management System</p7>
+                <p7>Healthcare Inventory Management Systems</p7>
             </div>
         </div>
         );
